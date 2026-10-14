@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Carnet Gourmand</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="page-shell">
+
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-icon">🍽️</span>
+        <div>
+          <p class="brand-name">Le Carnet Gourmand</p>
+          <p class="brand-tagline">Avis des lecteurs</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-layout">
+
+      <!-- Zone recette -->
+      <section class="card recipe-card">
+        <h1>Pâtes crémeuses au citron</h1>
+        <p class="intro">Laissez votre avis sur cette recette grâce au formulaire ci‑contre.</p>
+
+        <div class="recipe-content">
+
+          <section>
+            <h2>Ingrédients</h2>
+            <ul>
+              <li>Pâtes</li>
+              <li>Crème</li>
+              <li>Citron</li>
+              <li>Parmesan</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Préparation</h2>
+            <ol>
+              <li>Cuire les pâtes.</li>
+              <li>Mélanger la crème et le citron.</li>
+              <li>Ajouter le parmesan.</li>
+            </ol>
+          </section>
+
+        </div>
+      </section>
+
+      <!-- Zone commentaires -->
+      <section class="card comments-panel">
+
+        <!-- Formulaire -->
+        <section class="comment-form-section">
+          <h2>Laisser un commentaire</h2>
+
+          <form id="comment-form" novalidate>
+
+            <div class="form-field">
+              <label for="author-name">Votre nom</label>
+              <input id="author-name" type="text" placeholder="Ex : Léa">
+              <small class="field-help">Minimum 2 caractères</small>
+            </div>
+
+            <div class="form-field">
+              <label for="comment-text">Votre commentaire</label>
+              <textarea id="comment-text" rows="4" placeholder="Votre avis sur la recette..."></textarea>
+              <small class="field-help">Minimum 10 caractères</small>
+            </div>
+
+            <button class="publish-button" type="submit">Publier</button>
+
+            <p id="form-message" class="form-message" hidden></p>
+          </form>
+        </section>
+
+        <!-- Liste des commentaires -->
+        <section class="comments-section">
+          <h2>Commentaires</h2>
+          <div id="comments-list" class="comments-list"></div>
+        </section>
+
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Devoir JavaScript — Frontend</p>
+    </footer>
+
+  </div>
+</body>
+</html>
